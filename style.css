@@ -37,3 +37,9 @@ a { color: inherit; text-decoration: none; } button, input, select, textarea { f
 @media (max-width: 380px) { .brand { font-size: 16px; }.brand em { font-size: 18px; }.brand-logo { height: 31px; width: 31px; }.header-tools { gap: 2px; }.icon-button { min-width: 35px; }.hero h1 { font-size: 43px; }.product-visual { height: 165px; }.product-info { align-items: start; flex-direction: column; gap: 4px; }.product-price { align-self: end; margin-top: -24px; }.feature-specs { gap: 10px; }.feature-specs dt { font-size: 17px; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; } }
 @media (max-width: 700px) { .header-tools { gap: 2px; } .icon-button { min-width: 36px; } }
+
+/* Lisibilité et navigation sur les écrans intermédiaires. */
+.eyebrow { font-size: 12px; }
+.announcement { color: #faf7f0; }
+[data-theme="night"] .button-primary, [data-theme="night"] .button-dark, [data-theme="night"] .promo-row button, [data-theme="night"] .toast { color: #faf7f0; }
+@media (min-width: 701px) and (max-width: 1050px) { .header-inner { flex-wrap: wrap; gap: 8px 20px; padding-block: 12px; } .main-nav { order: 3; width: 100%; justify-content: center; gap: 24px; } .main-nav a { white-space: nowrap; } }
